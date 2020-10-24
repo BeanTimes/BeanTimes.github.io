@@ -43,7 +43,11 @@ button {
     border-bottom: 2px solid black;
     background-color: rgb(245, 245, 245);
     font-size: large;
-    width: 15vw;
+    width: auto;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-right: .5vw;
+    margin-left: .5vw;
     height: 3vh;
     transition-duration: 0.25s;
 }
@@ -95,9 +99,45 @@ button {
     text-align: center;
     padding-top: 5vh;
     padding-bottom: 1vh;
-    height: 96vh;
+    height: 94vh;
 }
 
 #demo {
     font-size: xx-large;
 }
+
+/* For Desktops */
+@media only screen and (min-width: 768px) {
+    
+}
+
+/* For Tablets */
+@media only screen and (min-width: 600px) {
+    button {
+        font-size: medium;
+        width: auto;
+    }
+}
+
+/* For Mobile Phones: */
+@media only screen and (max-width: 600px) {
+    button {
+        font-size: small;    
+        width: auto;   
+        padding-right: 2px;
+        padding-left: 2px;
+    }
+
+    #main { 
+        margin-left: 5vw; 
+        margin-right: 5vw;
+    }
+}
+
+
+
+
+
+
+
+
