@@ -128,7 +128,7 @@ button {
     border: 0;
     padding: 0;
     margin: 0;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid rgb(66, 66, 66);
     background-color:transparent;
     font-size: large;
     width: auto;
@@ -303,6 +303,72 @@ button.next:hover {
         font-size: medium;
         width: auto;
     }
+
+    h1 {
+        font-size: 24px;
+    }
+    
+    h2 {
+        font-size: 20px;
+    }
+    
+    p {
+        font-size: 16px;
+    }
+
+    nav {
+        width: 80vw; 
+        padding-top: .25vw;
+        padding-bottom: .75vh;
+        margin-left: 10vw; 
+        margin-right: 10vw;
+    }
+
+    #main {
+        width: 70vw; 
+        border-left: 5vw solid rgb(245, 245, 245);
+        border-right: 5vw solid rgb(245, 245, 245);
+        margin-left: 10vw; 
+        margin-right: 10vw;
+    }
+    
+    #main-about {
+        width: 70vw; 
+        border-left: 5vw solid rgb(245, 245, 245);
+        border-right: 5vw solid rgb(245, 245, 245);
+        margin-left: 10vw; 
+        margin-right: 10vw;
+    }
+
+    #main { 
+        margin-left: 5vw; 
+        margin-right: 5vw;
+    }
+
+    #background-image {
+        left: 10vw;
+        background-size: 80vw 100%;
+    }
+
+    #div-line-long-thick-top {
+        width: 80vw;
+    }
+    
+    #div-line-long-thick-bottom {
+        width: 80vw;
+    }
+    
+    #div-line-long {
+        width: 60vw;
+    }
+    
+    #div-line-short {
+        width: 40vw;
+    }
+    
+    #div-line-nav {
+        width: 80vw;
+    }
 }
 
 
@@ -313,10 +379,6 @@ button.next:hover {
 
 */
 @media only screen and (max-width: 600px) {
-    nav {
-        position: absolute;
-    }
-
     button {
         font-size: small;    
         width: auto;   
@@ -324,8 +386,70 @@ button.next:hover {
         padding-left: 2px;
     }
 
+    h1 {
+        font-size: 24px;
+    }
+    
+    h2 {
+        font-size: 20px;
+    }
+    
+    p {
+        font-size: 16px;
+    }
+
+    nav {
+        width: 80vw; 
+        padding-top: .25vw;
+        padding-bottom: .75vh;
+        margin-left: 10vw; 
+        margin-right: 10vw;
+    }
+
+    #main {
+        width: 70vw; 
+        border-left: 5vw solid rgb(245, 245, 245);
+        border-right: 5vw solid rgb(245, 245, 245);
+        margin-left: 10vw; 
+        margin-right: 10vw;
+    }
+    
+    #main-about {
+        width: 70vw; 
+        border-left: 5vw solid rgb(245, 245, 245);
+        border-right: 5vw solid rgb(245, 245, 245);
+        margin-left: 10vw; 
+        margin-right: 10vw;
+    }
+
     #main { 
         margin-left: 5vw; 
         margin-right: 5vw;
     }
+
+    #background-image {
+        left: 10vw;
+        background-size: 80vw 100%;
+    }
+
+    #div-line-long-thick-top {
+        width: 80vw;
+    }
+    
+    #div-line-long-thick-bottom {
+        width: 80vw;
+    }
+    
+    #div-line-long {
+        width: 60vw;
+    }
+    
+    #div-line-short {
+        width: 40vw;
+    }
+    
+    #div-line-nav {
+        width: 80vw;
+    }
+
 }
