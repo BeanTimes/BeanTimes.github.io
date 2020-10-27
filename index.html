@@ -14,8 +14,8 @@
 
         <!--Meta junk-->
         <meta name="keywords" content="The Bean Times, Memories of the Bean Times, Beans, Times">
-        <meta name="description" content="Official Website of the Bean Times Quintet.">
-        <meta name="author" content="Daniel Harnden">
+        <meta name="description" content="beans.">
+        <meta name="author" content="beans">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!--Tab stuff & CSS-->
@@ -26,53 +26,61 @@
     </head>
 
     <nav>
-        <button class="navNews">News</button>
-        <button class="patreon">Support Us on Patreon</button>
-        <button class="tableOfContents">Table of Contents</button>
-        <button class="about">About</button>
+        <button class="navNews" onclick="window.location.href='index.html';">Memories</button>
+        <button class="patreon" onclick="window.location.href='index.html';">of the</button>
+        <button class="tableOfContents" onclick="window.location.href='index.html';">Bean</button>
+        <button class="about" onclick="window.location.href='index.html';">Times</button>
+        <div id="div-line-nav"></div>
     </nav>
 
     <body>
-        <div id="main">
-            <p id="demo"></p>
+        <div id="backerground-image"></div>
+        <div id="background-image"></div>
 
-                <script>
-                // Set the date we're counting down to
-                var countDownDate = new Date("Jan 1, 2021 0:0:0").getTime();
 
-                // Update the count down every 1 second
-                var x = setInterval(function() {
 
-                // Get today's date and time
-                var now = new Date().getTime();
+        <div id="main-about">
 
-                // Find the distance between now and the count down date
-                var distance = countDownDate - now;
+            <br><br><br><br><br><br><br><br><br><br>
 
-                // Time calculations for days, hours, minutes and seconds
-                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            <h1 id="demo"></h1>
 
-                // Display the result in the element with id="demo"
-                document.getElementById("demo").innerHTML = days + " days, " + hours + " hour, "
-                + minutes + " minutes, and " + seconds + " seconds.";
+            <script>
+            // Set the date we're counting down to
+            var countDownDate = new Date("Jan 1, 2021 0:0:0").getTime();
 
-                // If the count down is finished, write some text
-                if (distance < 0) {
-                    clearInterval(x);
-                    document.getElementById("demo").innerHTML = "EXPIRED";
-                }
-                }, 1000);
-                </script>
+            // Update the count down every 1 second
+            var x = setInterval(function() {
+
+            // Get today's date and time
+            var now = new Date().getTime();
+
+            // Find the distance between now and the count down date
+            var distance = countDownDate - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Display the result in the element with id="demo"
+            document.getElementById("demo").innerHTML = days + " day(s), " + hours + " hour(s), "
+            + minutes + " minute(s), and " + seconds + " second(s) until Memories of the Bean Times.";
+
+            // If the count down is finished, write some text
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("demo").innerHTML = "EXPIRED";
+            }
+            }, 1000);
+            </script>
+
+            <br><br><br><br><br><br><br><br><br><br>
+
+            <div id="div-line-long-thick-top"></div>
+            <div id="div-line-long"></div>
+            <div id="div-line-short"></div>
         </div>
-    
-
-
-
-
-
-
     </body>
  </html>
