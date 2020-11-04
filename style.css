@@ -15,7 +15,6 @@
 body {
     background-color: rgb(66, 66, 66);
     color: rgb(66, 66, 66);
-    font-family: 'Georgia', Courier, monospace;
     margin: 0;
 }
 
@@ -24,7 +23,7 @@ nav {
     width: 50vw; 
     background-color: rgb(245, 245, 245);
     color:  rgb(66, 66, 66);
-    height: 3vh;
+    height: auto;
     text-align: center;
     padding-top: .25vw;
     padding-bottom: .75vh;
@@ -96,6 +95,8 @@ nav {
 */
 
 h1 {
+    font-family: 'Georgia', "Palatino Linotype", serif;
+    color: rgb(33, 33, 33);
     font-size: 32px;
     font-weight: bold;
     text-align: left;
@@ -104,6 +105,8 @@ h1 {
 }
 
 h2 {
+    font-family: 'Georgia', "Palatino Linotype", serif;
+    color: rgb(33, 33, 33);
     font-size: 24px;
     text-align: left;
     position: relative;
@@ -111,6 +114,8 @@ h2 {
 }
 
 p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(0, 0, 0);
     font-size: 16px;
     text-align: justify;
     display: block;
@@ -123,10 +128,20 @@ p {
 
 a {
     text-decoration: none;
-    color: rgb(66, 66, 66);
+    color: rgb(60, 40, 0);
+    padding: 10px;
+    border-radius: 25px;
+}
+
+a:hover {
+    text-decoration: none;
+    color: rgb(160, 140, 100);
+    transition-duration: 0.25s;
 }
 
 button {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(60, 40, 0);
     border: 0;
     padding: 0;
     margin: 0;
@@ -151,6 +166,9 @@ ul {
     z-index: 10;
 }
 
+li {
+    margin-bottom: 15px;
+}
 
 
 /*
@@ -159,30 +177,31 @@ ul {
 
 button:hover {
     cursor: pointer;
-    border-radius: 50px;
+    color: rgb(160, 140, 100);
     transition-duration: 0.25s;
 }
 
 button.navNews:hover {
-    border-bottom: 2px solid rgb(245, 145, 145);
+    border-bottom: 5px solid rgb(245, 145, 145);
 }
 
 button.patreon:hover {
-    border-bottom: 2px solid rgb(245, 145, 45);
+    border-bottom: 5px solid rgb(245, 145, 45);
 }
 
 button.tableOfContents:hover {
-    border-bottom: 2px solid rgb(45, 245, 45);
+    border-bottom: 5px solid rgb(45, 245, 45);
 }
 
 button.about:hover {
-    border-bottom: 2px solid rgb(45, 145, 245);
+    border-bottom: 5px solid rgb(45, 145, 245);
 }
 
 button.previous {
     border-left: 2px solid rgb(66, 66, 66);
     border-bottom: 0;
     margin: 10px;
+    border-radius: 50px;
 }
 
 button.previous:hover {
@@ -194,6 +213,7 @@ button.next {
     border-right: 2px solid rgb(66, 66, 66);
     border-bottom: 0;
     margin: 10px;
+    border-radius: 50px;
 }
 
 button.next:hover {
@@ -219,6 +239,22 @@ button.next:hover {
 .center-vert {
     margin-top: auto;
     margin-bottom: -5px;
+}
+
+.start-reading:hover {
+    border: 2px solid rgb(66, 66, 66);
+}
+
+.toc {
+    border-radius: 0;
+    padding: 0px;
+    border-bottom: 2px solid rgb(66, 66, 66);
+}
+
+.toc:hover {
+    border-radius: 0;
+    padding: 0px;
+    border-bottom: 2px solid rgb(245, 145, 145);
 }
 
 /*
@@ -300,9 +336,9 @@ button.next:hover {
     FOR TABLETS AND DEVICES BETWEEN 768 AND 600 PIXELS WIDE
 
 */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1050px) {
     button {
-        font-size: medium;
+        font-size: small;
         width: auto;
     }
 
@@ -342,14 +378,10 @@ button.next:hover {
         margin-right: 10vw;
     }
 
-    #main { 
-        margin-left: 5vw; 
-        margin-right: 5vw;
-    }
-
     #background-image {
         left: 10vw;
-        background-size: 80vw 100%;
+        width: 80vw;
+        height: auto;
     }
 
     #div-line-long-thick-top {
@@ -389,15 +421,15 @@ button.next:hover {
     }
 
     h1 {
-        font-size: 24px;
+        font-size: 22px;
     }
     
     h2 {
-        font-size: 20px;
+        font-size: 18px;
     }
     
     p {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     nav {
@@ -424,22 +456,20 @@ button.next:hover {
         margin-right: 10vw;
     }
 
-    #main { 
-        margin-left: 5vw; 
-        margin-right: 5vw;
-    }
-
     #background-image {
         left: 10vw;
-        background-size: 80vw 100%;
+        width: 80vw;
+        height: auto;
     }
 
     #div-line-long-thick-top {
         width: 80vw;
+        height: auto;
     }
     
     #div-line-long-thick-bottom {
         width: 80vw;
+        height: auto;
     }
     
     #div-line-long {
