@@ -67,12 +67,12 @@ nav {
     left: 25vw;
     right: 0;
     bottom: 0;
-    background-image: url(https://image.freepik.com/free-vector/yellow-parchment_53876-91513.jpg);
+    background-image: url("images/background_image.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     width: 50vw;
     height: auto;
-    opacity: 0.25;
+    opacity: 0.5;
     z-index: 0;
 }
 
@@ -83,7 +83,9 @@ nav {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url(https://images.unsplash.com/photo-1544030834-45f2dcb88b4a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80);
+    background-size: 700px, 500px;
+    background-repeat: repeat;
+    background-image: url("images/backerground_image.jpg");
     opacity: .25;
     z-index: -1;
 }
