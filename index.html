@@ -12,13 +12,16 @@
             gtag('config', 'G-FP2VLGCTTM');
         </script>
 
-        <!--Meta junk-->
+        <!-- Adsense Script (I need money) -->
+        <script data-ad-client="ca-pub-4658221679792169" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+        <!-- Meta -->
         <meta name="keywords" content="The Bean Times, Memories of the Bean Times, Beans, Times">
         <meta name="description" content="beans.">
         <meta name="author" content="beans">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!--Tab stuff & CSS-->
+        <!-- Tab stuff & CSS -->
         <title>The Bean Times</title>
 
         <!--  Bean Icon? <link rel="" type="" href=""/> -->
@@ -26,10 +29,10 @@
     </head>
 
     <nav>
-        <button class="navNews" onclick="window.location.href='index.html';">Memories</button>
-        <button class="patreon" onclick="window.location.href='index.html';">of the</button>
-        <button class="tableOfContents" onclick="window.location.href='index.html';">Bean</button>
-        <button class="about" onclick="window.location.href='index.html';">Times</button>
+        <button class="navNews" onclick="window.location.href='index.html';">News</button>
+        <button class="patreon" onclick="window.open('https://patreon.com', '_blank')" >Support Us on Patreon</button>
+        <button class="tableOfContents" onclick="window.location.href='./chapters/tableofcontents.html';">Table of Contents</button>
+        <button class="about" onclick="window.location.href='about.html';">About</button>
         <div id="div-line-nav"></div>
     </nav>
 
@@ -40,39 +43,27 @@
 
 
         <div id="main-about">
+            <h1 class="center">
+                <a class="start-reading" href="./chapters/chapter1.html">Start reading now!</a>
+            </h1>
+            <div id="div-line-long-thick-top"></div>
 
-            <h1 id="demo"></h1>
+            <h1>
+                First Website Test and Ad Test.
+            </h1>
+            <div id="div-line-long"></div>
+            <h2>
+                November 5th, 2020
+            </h2>
+            <div id="div-line-short"></div>
 
-            <script>
-            // Set the date we're counting down to
-            var countDownDate = new Date("Jan 1, 2021 0:0:0").getTime();
+            <p>
+                This is a website designed for testing purposes! I'm sending this to you so you can see how the content looks on the beta version of the website design without actually posting all the stuff online. This is the "News" section, where news will be displayed. The news will follow this general setup with title, date, and content. The words on the top are links to other parts of the site. The patreon link will link to our patreon once we create it. The table of contents works, and the about tab will be information about the project and us. I'm thinking about adding cookie support to save and load your position in the book, and maybe some different backgrounds depending on time of day of the chapter (or maybe even real life idk). If you look at the black background, it's stars rn. Anyways, click the big start reading button or go to the table of contents to see the actual stuff. 
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio laboriosam nobis tempora. Nostrum a, ut accusantium, voluptate necessitatibus eius ad magni nisi ipsa voluptatibus laudantium blanditiis aliquid inventore facilis excepturi! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores sequi voluptate nam, suscipit blanditiis exercitationem minus deleniti pariatur porro at delectus et doloribus saepe nostrum quasi quaerat quas. Voluptates, pariatur. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum, nemo veniam? Fugit, animi architecto consequatur voluptates eum</p> 
+                <p> magni minima explicabo eveniet id consectetur necessitatibus error aspernatur, quo, maxime ea. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio ducimus fugit sapiente nisi, minus in quam expedita, corporis, reprehenderit incidunt doloribus similique ea consequuntur quo nemo aspernatur debitis? Laborum, dolore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed totam ea a quia voluptatem nobis nemo porro molestiae ad neque adipisci similique, error repellat nesciunt corporis impedit harum quas commodi!</p>
+            </p>
 
-            // Update the count down every 1 second
-            var x = setInterval(function() {
 
-            // Get today's date and time
-            var now = new Date().getTime();
-
-            // Find the distance between now and the count down date
-            var distance = countDownDate - now;
-
-            // Time calculations for days, hours, minutes and seconds
-            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-            // Display the result in the element with id="demo"
-            document.getElementById("demo").innerHTML = days + " day(s), " + hours + " hour(s), "
-            + minutes + " minute(s), and " + seconds + " second(s) until Memories of the Bean Times.";
-
-            // If the count down is finished, write some text
-            if (distance < 0) {
-                clearInterval(x);
-                document.getElementById("demo").innerHTML = "EXPIRED";
-            }
-            }, 1000);
-            </script>
 
             <div id="div-line-long-thick-top"></div>
             <div id="div-line-long"></div>
