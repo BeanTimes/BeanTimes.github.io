@@ -13,7 +13,7 @@
 */
 
 body {
-    background-color: rgb(66, 66, 66);
+    background-color: rgb(50, 51, 55);
     color: rgb(66, 66, 66);
     margin: 0;
 }
@@ -21,7 +21,7 @@ body {
 nav {
     display: block;
     width: 50vw; 
-    background-color: rgb(245, 245, 245);
+    background-color: rgb(236, 228, 210);
     color:  rgb(66, 66, 66);
     height: auto;
     text-align: center;
@@ -34,11 +34,11 @@ nav {
 #main {
     display: block;
     width: 40vw; 
-    background-color: rgb(245, 245, 245);
-    border-left: 5vw solid rgb(245, 245, 245);
-    border-right: 5vw solid rgb(245, 245, 245);
-    border-top: 1px solid rgb(245, 245, 245);
-    border-bottom: 1px solid rgb(245, 245, 245);
+    background-color: rgb(236, 228, 210);
+    border-left: 5vw solid rgb(236, 228, 210);
+    border-right: 5vw solid rgb(236, 228, 210);
+    border-top: 1px solid rgb(236, 228, 210);
+    border-bottom: 1px solid rgb(236, 228, 210);
     margin-left: 25vw; 
     margin-right: 25vw;
     text-align: center;
@@ -48,30 +48,30 @@ nav {
 #main-about {
     display: block;
     width: 40vw; 
-    background-color: rgb(245, 245, 245);
-    border-left: 5vw solid rgb(245, 245, 245);
-    border-right: 5vw solid rgb(245, 245, 245);
-    border-top: 1px solid rgb(245, 245, 245);
-    border-bottom: 1px solid rgb(245, 245, 245);
+    background-color: rgb(236, 228, 210);
+    border-left: 5vw solid rgb(236, 228, 210);
+    border-right: 5vw solid rgb(236, 228, 210);
+    border-top: 1px solid rgb(236, 228, 210);
+    border-bottom: 1px solid rgb(236, 228, 210);
     margin-left: 25vw; 
     margin-right: 25vw;
     text-align: center;
     height: 95.5vh;
 }
 
-/* this little id is used to create a parchment overlay, specifically for use in main*/
+/* currently unused. there were problems with them so i just changed background colors */
 #background-image {
+    left: 25vw;
+    width: 50vw;
+    height: auto;
     position: fixed;
     display: block;
     top: 0;
-    left: 25vw;
     right: 0;
     bottom: 0;
-    background-image: url("images/background_image.jpg");
+    background-image: url("background_image.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    width: 50vw;
-    height: auto;
     opacity: 0.5;
     z-index: 0;
 }
@@ -85,7 +85,7 @@ nav {
     bottom: 0;
     background-size: 700px, 500px;
     background-repeat: repeat;
-    background-image: url("images/backerground_image.jpg");
+    background-image: url("backerground_image.jpg");
     opacity: .25;
     z-index: -1;
 }
