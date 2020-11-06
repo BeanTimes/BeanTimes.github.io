@@ -148,7 +148,7 @@ button {
     border: 0;
     padding: 0;
     margin: 0;
-    border-bottom: 2px solid rgb(66, 66, 66);
+    border-bottom: 2px solid rgb(50, 51, 55);
     background-color:transparent;
     font-size: large;
     width: auto;
@@ -202,7 +202,7 @@ button.about:hover {
 }
 
 button.previous {
-    border-left: 2px solid rgb(66, 66, 66);
+    border-left: 2px solid rgb(50, 51, 55);
     border-bottom: 0;
     margin: 10px;
     border-radius: 50px;
@@ -214,7 +214,7 @@ button.previous:hover {
 }
 
 button.next {
-    border-right: 2px solid rgb(66, 66, 66);
+    border-right: 2px solid rgb(50, 51, 55);
     border-bottom: 0;
     margin: 10px;
     border-radius: 50px;
@@ -246,13 +246,13 @@ button.next:hover {
 }
 
 .start-reading:hover {
-    border: 2px solid rgb(66, 66, 66);
+    border: 2px solid rgb(50, 51, 55);
 }
 
 .toc {
     border-radius: 0;
     padding: 0px;
-    border-bottom: 2px solid rgb(66, 66, 66);
+    border-bottom: 2px solid rgb(50, 51, 55);
 }
 
 .toc:hover {
@@ -271,7 +271,7 @@ button.next:hover {
     justify-content: space-around;
     width: 100%;
     margin-top: 0;
-    border-bottom: 5px solid rgb(66, 66, 66);
+    border-bottom: 5px solid rgb(50, 51, 55);
     width: 50vw;
     margin-left: -5vw;
     position: relative;
@@ -283,8 +283,8 @@ button.next:hover {
     justify-content: space-around;
     width: 100%;
     padding: 0;;
-    border-top: 5px solid rgb(66, 66, 66);
-    border-bottom: 5px solid rgb(66, 66, 66);
+    border-top: 5px solid rgb(50, 51, 55);
+    border-bottom: 5px solid rgb(50, 51, 55);
     width: 50vw;
     margin-left: -5vw;
     position: relative;
@@ -293,7 +293,7 @@ button.next:hover {
 
 /* used to create a still long yet not nearly as thick or thobbing line */
 #div-line-long {
-    border-top: 2px solid rgb(66, 66, 66);
+    border-top: 2px solid rgb(50, 51, 55);
     width: 40vw;
     margin: 10px;
     position: relative;
@@ -302,7 +302,7 @@ button.next:hover {
 
 /* this line has self esteem issues. it's not about the size, but how you use it little buddy! */
 #div-line-short {
-    border-top: 2px solid rgb(66, 66, 66);
+    border-top: 2px solid rgb(50, 51, 55);
     width: 25vw;
     margin: 10px;
     margin-left: auto;
@@ -312,7 +312,7 @@ button.next:hover {
 }
 
 #div-line-nav {
-    border-top: 5px solid rgb(66, 66, 66);
+    border-top: 5px solid rgb(50, 51, 55);
     width: 50vw;
     margin: -.25vh;
     margin-left: auto;
@@ -368,16 +368,16 @@ button.next:hover {
 
     #main {
         width: 70vw; 
-        border-left: 5vw solid rgb(245, 245, 245);
-        border-right: 5vw solid rgb(245, 245, 245);
+        border-left: 5vw solid rgb(236, 228, 210);
+        border-right: 5vw solid rgb(236, 228, 210);
         margin-left: 10vw; 
         margin-right: 10vw;
     }
     
     #main-about {
         width: 70vw; 
-        border-left: 5vw solid rgb(245, 245, 245);
-        border-right: 5vw solid rgb(245, 245, 245);
+        border-left: 5vw solid rgb(236, 228, 210);
+        border-right: 5vw solid rgb(236, 228, 210);
         margin-left: 10vw; 
         margin-right: 10vw;
     }
@@ -446,16 +446,16 @@ button.next:hover {
 
     #main {
         width: 70vw; 
-        border-left: 5vw solid rgb(245, 245, 245);
-        border-right: 5vw solid rgb(245, 245, 245);
+        border-left: 5vw solid rgb(236, 228, 210);
+        border-right: 5vw solid rgb(236, 228, 210);
         margin-left: 10vw; 
         margin-right: 10vw;
     }
     
     #main-about {
         width: 70vw; 
-        border-left: 5vw solid rgb(245, 245, 245);
-        border-right: 5vw solid rgb(245, 245, 245);
+        border-left: 5vw solid rgb(236, 228, 210);
+        border-right: 5vw solid rgb(236, 228, 210);
         margin-left: 10vw; 
         margin-right: 10vw;
     }
