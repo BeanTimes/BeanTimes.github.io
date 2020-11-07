@@ -12,70 +12,85 @@
             gtag('config', 'G-FP2VLGCTTM');
         </script>
 
-        <!--Meta junk-->
+        <!-- Adsense Script (I need money) -->
+        <script data-ad-client="ca-pub-4658221679792169" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+        <!-- Meta -->
         <meta name="keywords" content="The Bean Times, Memories of the Bean Times, Beans, Times">
         <meta name="description" content="beans.">
         <meta name="author" content="beans">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!--Tab stuff & CSS-->
-        <title>The Bean Times</title>
-        <link rel="icon" type="image/png" href="./images/favicon.png"/>
+        <!-- Tab stuff & CSS -->
+        <title>News - The Bean Times</title>
+        <link rel="icon" type="image/png" href="favicon.png"/>
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
 
     <nav>
-        <button class="navNews" onclick="window.location.href='index.html';">Memories</button>
-        <button class="patreon" onclick="window.location.href='index.html';">of the</button>
-        <button class="tableOfContents" onclick="window.location.href='index.html';">Bean</button>
-        <button class="about" onclick="window.location.href='index.html';">Times</button>
+        <button class="navNews" onclick="window.location.href='index.html';">News</button>
+        <button class="patreon" onclick="window.open('https://patreon.com', '_blank')" >Support Us on Patreon</button>
+        <button class="tableOfContents" onclick="window.location.href='./chapters/tableofcontents.html';">Table of Contents</button>
+        <button class="about" onclick="window.location.href='about.html';">About</button>
         <div id="div-line-nav"></div>
     </nav>
 
     <body>
-        <div id="backerground-image"></div>
-        <div id="background-image"></div>
 
+        <div id="main">
+            <h1 class="center">
+                <h1 id="demo"></h1>
 
+                <script>
+                // Set the date we're counting down to
+                var countDownDate = new Date("Jan 1, 2021 18:00:00").getTime();
 
-        <div id="main-about">
+                // Update the count down every 1 second
+                var x = setInterval(function() {
 
-            <h1 id="demo"></h1>
+                // Get today's date and time
+                var now = new Date().getTime();
 
-            <script>
-            // Set the date we're counting down to
-            var countDownDate = new Date("Jan 1, 2021 0:0:0").getTime();
+                // Find the distance between now and the count down date
+                var distance = countDownDate - now;
 
-            // Update the count down every 1 second
-            var x = setInterval(function() {
+                // Time calculations for days, hours, minutes and seconds
+                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-            // Get today's date and time
-            var now = new Date().getTime();
+                // Display the result in the element with id="demo"
+                document.getElementById("demo").innerHTML = days + " day(s), " + hours + " hour(s), "
+                + minutes + " minute(s), and " + seconds + " second(s) until Memories of the Bean Times.";
 
-            // Find the distance between now and the count down date
-            var distance = countDownDate - now;
+                // If the count down is finished, write some text
+                if (distance < 0) {
+                    clearInterval(x);
+                    document.getElementById("demo").innerHTML = "EXPIRED";
+                }
+                }, 1000);
+                </script>
 
-            // Time calculations for days, hours, minutes and seconds
-            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            </h1>
+            <div id="div-line-long-thick-top"></div>
 
-            // Display the result in the element with id="demo"
-            document.getElementById("demo").innerHTML = days + " day(s), " + hours + " hour(s), "
-            + minutes + " minute(s), and " + seconds + " second(s) until Memories of the Bean Times.";
+            <h1>
+                Welcome to the Bean Times.
+            </h1>
+            <div id="div-line-long"></div>
+            <h2>
+                November 6th, 2020
+            </h2>
+            <div id="div-line-short"></div>
 
-            // If the count down is finished, write some text
-            if (distance < 0) {
-                clearInterval(x);
-                document.getElementById("demo").innerHTML = "EXPIRED";
-            }
-            }, 1000);
-            </script>
+            <p>Return at 6pm, Friday, January 1st.</p>
 
             <div id="div-line-long-thick-top"></div>
             <div id="div-line-long"></div>
             <div id="div-line-short"></div>
+
+
         </div>
     </body>
  </html>

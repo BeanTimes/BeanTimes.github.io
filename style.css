@@ -14,7 +14,7 @@
 
 body {
     background-color: rgb(50, 51, 55);
-    color: rgb(66, 66, 66);
+    color: rgb(33, 33, 33);
     margin: 0;
 }
 
@@ -22,7 +22,7 @@ nav {
     display: block;
     width: 50vw; 
     background-color: rgb(236, 228, 210);
-    color:  rgb(66, 66, 66);
+    color:  rgb(33, 33, 33);
     height: auto;
     text-align: center;
     padding-top: .25vw;
@@ -183,18 +183,19 @@ button:hover {
     color: rgb(160, 140, 100);
     transition-timing-function: ease;
     transition-duration: 0.25s;
+    border-radius: 5px;
 }
 
 button.navNews:hover {
-    border-bottom: 5px solid rgb(245, 145, 145);
+    border-bottom: 5px solid rgb(245, 100, 80);
 }
 
 button.patreon:hover {
-    border-bottom: 5px solid rgb(245, 145, 45);
+    border-bottom: 5px solid rgb(250, 105, 85);
 }
 
 button.tableOfContents:hover {
-    border-bottom: 5px solid rgb(45, 245, 45);
+    border-bottom: 5px solid rgb(100, 245, 80);
 }
 
 button.about:hover {
@@ -202,26 +203,26 @@ button.about:hover {
 }
 
 button.previous {
-    border-left: 2px solid rgb(50, 51, 55);
+    border-left: 15px solid rgb(50, 51, 55);
     border-bottom: 0;
     margin: 10px;
     border-radius: 50px;
 }
 
 button.previous:hover {
-    border-left: 15px solid rgb(91, 74, 243);
+    border-left: 15px solid rgb(45, 145, 245);
     border-bottom: 0;
 }
 
 button.next {
-    border-right: 2px solid rgb(50, 51, 55);
+    border-right: 15px solid rgb(50, 51, 55);
     border-bottom: 0;
     margin: 10px;
     border-radius: 50px;
 }
 
 button.next:hover {
-    border-right: 15px solid rgb(255, 84, 84);
+    border-right: 15px solid rgb(245, 100, 80);
     border-bottom: 0;
 }
 
@@ -258,7 +259,7 @@ button.next:hover {
 .toc:hover {
     border-radius: 0;
     padding: 0px;
-    border-bottom: 2px solid rgb(245, 145, 145);
+    border-bottom: 2px solid rgb(245, 100, 80);
 }
 
 /*
