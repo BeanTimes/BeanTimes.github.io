@@ -551,26 +551,32 @@ button.next:hover {
     #div-line-long-thick-top {
         width: 96vw;
         height: auto;
-        margin: 0;
+        margin-left: auto;
+        margin-right: auto;
     }
     
     #div-line-long-thick-bottom {
         width: 96vw;
         height: auto;
-        margin: 0 auto;
+        margin-left: auto;
+        margin-right: auto;
     }
     
     #div-line-long {
         width: 80vw;
-        margin-left: 0 auto;
+        margin-left: auto;
+        margin-right: auto;
     }
     
     #div-line-short {
         width: 60vw;
-        margin-left: 0 auto;
+        margin-left: auto;
+        margin-right: auto;
     }
     
     #div-line-nav {
         width: 96vw;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
