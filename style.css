@@ -433,7 +433,7 @@ button.next:hover {
 */
 @media only screen and (max-width: 600px) {
     button {
-        font-size: xx-small;    
+        font-size: 12px;    
         width: auto;   
         padding-right: 2px;
         padding-left: 2px;
@@ -450,6 +450,10 @@ button.next:hover {
     h1 {
         font-size: 20px;
     }
+
+    #demo {
+        font-size: small;
+    }
     
     h2 {
         font-size: 16px;
@@ -460,27 +464,19 @@ button.next:hover {
     }
 
     nav {
-        width: 80vw; 
+        width: 100vw; 
         padding-top: .25vw;
         padding-bottom: .75vh;
-        margin-left: 10vw; 
-        margin-right: 10vw;
+        margin-left: 2vw solid rgb(236, 228, 210);
+        margin-right: 2vw solid rgb(236, 228, 210);
+        margin: 0;
     }
 
     #main {
-        width: 70vw; 
-        border-left: 5vw solid rgb(236, 228, 210);
-        border-right: 5vw solid rgb(236, 228, 210);
-        margin-left: 10vw; 
-        margin-right: 10vw;
-    }
-    
-    #main-about {
-        width: 70vw; 
-        border-left: 5vw solid rgb(236, 228, 210);
-        border-right: 5vw solid rgb(236, 228, 210);
-        margin-left: 10vw; 
-        margin-right: 10vw;
+        width: 96vw; 
+        border-left: 2vw solid rgb(236, 228, 210);
+        border-right: 2vw solid rgb(236, 228, 210);
+        margin: 0;
     }
 
     #background-image {
@@ -490,27 +486,36 @@ button.next:hover {
     }
 
     #div-line-long-thick-top {
-        width: 80vw;
+        width: 96vw;
         height: auto;
+        margin-left: auto;
+        margin-right: auto;
     }
     
     #div-line-long-thick-bottom {
-        width: 80vw;
+        width: 96vw;
         height: auto;
+        margin-left: auto;
+        margin-right: auto;
     }
     
     #div-line-long {
-        width: 60vw;
+        width: 80vw;
+        margin-left: auto;
+        margin-right: auto;
     }
     
     #div-line-short {
-        width: 40vw;
+        width: 60vw;
+        margin-left: auto;
+        margin-right: auto;
     }
     
     #div-line-nav {
-        width: 80vw;
+        width: 96vw;
+        margin-left: auto;
+        margin-right: auto;
     }
-
 }
 
 /*
@@ -520,18 +525,18 @@ button.next:hover {
 */
 @media only screen and (max-width: 400px) {
     button {
-        font-size: 7px;    
+        font-size:12px;    
         width: auto;   
         padding-right: 2px;
         padding-left: 2px;
     }
 
     button.previous {
-        font-size: x-small;
+        font-size: small;
     }
     
     button.next {
-        font-size: x-small;
+        font-size: small;
     }
 
     h1 {
