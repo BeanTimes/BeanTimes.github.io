@@ -445,7 +445,8 @@ button.next:hover {
     }
     
     #div-line-nav {
-        width: 80vw;
+        width: 45vw;
+        margin-left: -2.5vw;
     }
 }
 
