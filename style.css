@@ -31,6 +31,10 @@ nav {
     margin-right: 25vw;
 }
 
+nav.mobile {
+    display: none;
+}
+
 #main {
     display: block;
     width: 40vw; 
@@ -171,6 +175,14 @@ button {
     z-index: 10;
 }
 
+button.index {
+    font-size: 25px;    
+    height: auto;
+    width: auto;   
+    padding-right: 2px;
+    padding-left: 2px;
+}
+
 ul {
     font-size: 32px;
     font-weight: bold;
@@ -287,8 +299,8 @@ button.next:hover {
     width: 100%;
     margin-top: 0;
     border-bottom: 5px solid rgb(50, 51, 55);
-    width: 50vw;
-    margin-left: -5vw;
+    width: 45vw;
+    margin-left: -2.5vw;
     position: relative;
     z-index: 10;
 }
@@ -300,8 +312,8 @@ button.next:hover {
     padding: 0;;
     border-top: 5px solid rgb(50, 51, 55);
     border-bottom: 5px solid rgb(50, 51, 55);
-    width: 50vw;
-    margin-left: -5vw;
+    width: 45vw;
+    margin-left: -2.5vw;
     position: relative;
     z-index: 10;
 }
@@ -328,7 +340,8 @@ button.next:hover {
 
 #div-line-nav {
     border-top: 5px solid rgb(50, 51, 55);
-    width: 50vw;
+    width: 45vw;
+    margin-left: -2.5vw;
     margin: -.25vh;
     margin-left: auto;
     margin-right: auto;
@@ -379,6 +392,14 @@ button.next:hover {
         padding-bottom: .75vh;
         margin-left: 10vw; 
         margin-right: 10vw;
+    }
+
+    nav.mobile {
+        display: block;
+    }
+
+    nav.desktop {
+        display: none;
     }
 
     #main {
@@ -470,6 +491,14 @@ button.next:hover {
         margin-left: 2vw solid rgb(236, 228, 210);
         margin-right: 2vw solid rgb(236, 228, 210);
         margin: 0;
+    }
+
+    button.index {
+        font-size: 25px;    
+        height: auto;
+        width: auto;   
+        padding-right: 2px;
+        padding-left: 2px;
     }
 
     #main {
