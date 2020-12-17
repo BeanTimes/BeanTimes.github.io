@@ -31,6 +31,10 @@ nav {
     margin-right: 25vw;
 }
 
+nav.desktop {
+    display: block;
+}
+
 nav.mobile {
     display: none;
 }
@@ -493,6 +497,14 @@ button.next:hover {
         margin: 0;
     }
 
+    nav.mobile {
+        display: block;
+    }
+
+    nav.desktop {
+        display: none;
+    }
+
     button.index {
         font-size: 25px;    
         height: auto;
@@ -587,6 +599,14 @@ button.next:hover {
         border-left: 2vw solid rgb(236, 228, 210);
         border-right: 2vw solid rgb(236, 228, 210);
         margin: 0;
+    }
+
+    nav.mobile {
+        display: block;
+    }
+
+    nav.desktop {
+        display: none;
     }
 
     #main {
