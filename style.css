@@ -8,7 +8,6 @@
 
 /*
     body, nav, and id main elements bunched together for convenience
-    id background image is also here i guess
     for some background, i use ids for divs and classes for text and images
 */
 
@@ -16,6 +15,7 @@ body {
     background-color: rgb(50, 51, 55);
     color: rgb(22, 22, 22);
     margin: 0;
+    border: 0;
 }
 
 nav {
@@ -29,6 +29,7 @@ nav {
     padding-bottom: .75vh;
     margin-left: 25vw; 
     margin-right: 25vw;
+    border: 0;
 }
 
 nav.desktop {
@@ -66,39 +67,6 @@ nav.mobile {
     text-align: center;
     height: 95.5vh;
 }
-
-/* currently unused. there were problems with them so i just changed background colors */
-#background-image {
-    left: 25vw;
-    width: 50vw;
-    height: auto;
-    position: fixed;
-    display: block;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    background-image: url("background_image.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 0.5;
-    z-index: 0;
-}
-
-#backerground-image {
-    position: fixed;
-    display: block;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-size: 700px, 500px;
-    background-repeat: repeat;
-    background-image: url("backerground_image.jpg");
-    opacity: .25;
-    z-index: -1;
-}
-
-
 
 /*
     text-based tags, stuff like headers, paragraphs, and hyperlinks. button is also here (say hi to button) but other more specifc button classes are grouped together for convenience
@@ -353,29 +321,27 @@ button.next:hover {
     z-index: 1;
 }
 
-
-
-/*
-    stuff to DELETE when website is completed
-*/
-
-/* used for the countdown timer i stole from w3schools*/
+/* used for the countdown timer, credit to: https://www.w3schools.com/howto/howto_js_countdown.asp*/
 #demo {
     text-align: center;
-    font-size: xx-large;
+    font-size: x-large;
 }
 
 
 
 /*
 
-    FOR TABLETS AND DEVICES BETWEEN 768 AND 600 PIXELS WIDE
+    FOR TABLETS AND DEVICES BETWEEN 1050 AND 600 PIXELS WIDE
 
 */
 @media only screen and (max-width: 1050px) {
     button {
         font-size: medium;
         width: auto;
+    }
+    
+    #demo {
+        font-size: large;
     }
 
     h1 {
@@ -391,7 +357,7 @@ button.next:hover {
     }
 
     nav {
-        width: 45vw;
+        width: 80vw;
         margin-left: -2.5vw;
         padding-top: .25vw;
         padding-bottom: .75vh;
@@ -423,31 +389,34 @@ button.next:hover {
         margin-right: 10vw;
     }
 
-    #background-image {
-        left: 10vw;
-        width: 80vw;
-        height: auto;
-    }
-
     #div-line-long-thick-top {
-        width: 80vw;
+        width: 75vw;
+        margin-left: -2.5vw;
+        margin-right: auto;
     }
     
     #div-line-long-thick-bottom {
-        width: 80vw;
+        width: 75vw;
+        margin-left: auto;
+        margin-right: auto;
     }
     
     #div-line-long {
         width: 60vw;
+        margin-left: auto;
+        margin-right: auto;
     }
     
     #div-line-short {
         width: 40vw;
+        margin-left: auto;
+        margin-right: auto;
     }
     
     #div-line-nav {
-        width: 45vw;
-        margin-left: -2.5vw;
+        width: 75vw;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
@@ -520,12 +489,6 @@ button.next:hover {
         border-left: 2vw solid rgb(236, 228, 210);
         border-right: 2vw solid rgb(236, 228, 210);
         margin: 0;
-    }
-
-    #background-image {
-        left: 10vw;
-        width: 80vw;
-        height: auto;
     }
 
     #div-line-long-thick-top {
