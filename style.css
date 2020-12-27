@@ -421,13 +421,6 @@ button.next:hover {
 */
 @media only screen and (max-width: 600px) {
 
-    button {
-        font-size: 12px;    
-        width: auto;   
-        padding-right: 2px;
-        padding-left: 2px;
-    }
-
     button.previous {
         font-size: small;
     }
