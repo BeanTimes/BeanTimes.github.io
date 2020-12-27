@@ -463,7 +463,7 @@ button.next:hover {
     }
 
     nav {
-        width: 94vw; 
+        width: 96vw; 
         padding-top: .25vw;
         padding-bottom: .75vh;
         margin: 0;
@@ -488,7 +488,7 @@ button.next:hover {
     }
 
     #main {
-        width: 94vw; 
+        width: 96vw; 
         margin: 0;
         border-left: 0;
         border-right: 0;
