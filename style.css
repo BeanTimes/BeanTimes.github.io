@@ -91,6 +91,16 @@ h2 {
     z-index: 10;
 }
 
+h3 {
+    font-family: 'Georgia', "Palatino Linotype", serif;
+    color: rgb(33, 33, 33);
+    font-size: 20px;
+    text-align: left;
+    position: relative;
+    font-weight: bolder;
+    font-style: italic;
+}
+
 a.instagram {
     color:  rgb(221, 42, 123);
     text-decoration: underline;
@@ -136,23 +146,15 @@ button {
     margin: 0;
     border-bottom: 2px solid rgb(50, 51, 55);
     background-color:transparent;
-    font-size: large;
-    width: auto;
-    padding-right: 10px;
-    padding-left: 10px;
-    margin-right: .5vw;
-    margin-left: .5vw;
-    height: 3vh;
-    position: relative;
-    z-index: 10;
-}
-
-button.index {
     font-size: 25px;    
     height: auto;
     width: auto;   
     padding-right: 2px;
     padding-left: 2px;
+    margin-right: .5vw;
+    margin-left: .5vw;
+    position: relative;
+    z-index: 10;
 }
 
 ul {
@@ -428,6 +430,7 @@ button.next:hover {
 
 */
 @media only screen and (max-width: 600px) {
+
     button {
         font-size: 12px;    
         width: auto;   
@@ -460,12 +463,12 @@ button.next:hover {
     }
 
     nav {
-        width: 100vw; 
+        width: 94vw; 
         padding-top: .25vw;
         padding-bottom: .75vh;
-        margin-left: 2vw solid rgb(236, 228, 210);
-        margin-right: 2vw solid rgb(236, 228, 210);
         margin: 0;
+        border-left: 2vw solid rgb(236, 228, 210);
+        border-right: 2vw solid rgb(236, 228, 210);
     }
 
     nav.mobile {
@@ -485,21 +488,23 @@ button.next:hover {
     }
 
     #main {
-        width: 96vw; 
+        width: 94vw; 
+        margin: 0;
+        border-left: 0;
+        border-right: 0;
         border-left: 2vw solid rgb(236, 228, 210);
         border-right: 2vw solid rgb(236, 228, 210);
-        margin: 0;
     }
 
     #div-line-long-thick-top {
-        width: 96vw;
+        width: 90vw;
         height: auto;
         margin-left: auto;
         margin-right: auto;
     }
     
     #div-line-long-thick-bottom {
-        width: 96vw;
+        width: 90vw;
         height: auto;
         margin-left: auto;
         margin-right: auto;
@@ -518,97 +523,7 @@ button.next:hover {
     }
     
     #div-line-nav {
-        width: 96vw;
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
-
-/*
-
-    FOR PHONES AND EVEN STUPIDER LITTLE DEVICES LESS THAN 400 PIXELS WIDE
-
-*/
-@media only screen and (max-width: 400px) {
-    button {
-        font-size:12px;    
-        width: auto;   
-        padding-right: 2px;
-        padding-left: 2px;
-    }
-
-    button.previous {
-        font-size: small;
-    }
-    
-    button.next {
-        font-size: small;
-    }
-
-    h1 {
-        font-size: 20px;
-    }
-    
-    h2 {
-        font-size: 16px;
-    }
-    
-    p {
-        font-size: 14px;
-    }
-
-    nav {
-        width: 96vw; 
-        padding-top: .25vw;
-        padding-bottom: .75vh;
-        border-left: 2vw solid rgb(236, 228, 210);
-        border-right: 2vw solid rgb(236, 228, 210);
-        margin: 0;
-    }
-
-    nav.mobile {
-        display: block;
-    }
-
-    nav.desktop {
-        display: none;
-    }
-
-    #main {
-        width: 96vw; 
-        border-left: 2vw solid rgb(236, 228, 210);
-        border-right: 2vw solid rgb(236, 228, 210);
-        margin: 0;
-    }
-
-    #div-line-long-thick-top {
-        width: 96vw;
-        height: auto;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    
-    #div-line-long-thick-bottom {
-        width: 96vw;
-        height: auto;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    
-    #div-line-long {
-        width: 80vw;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    
-    #div-line-short {
-        width: 60vw;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    
-    #div-line-nav {
-        width: 96vw;
+        width: 94vw;
         margin-left: auto;
         margin-right: auto;
     }
