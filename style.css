@@ -79,7 +79,6 @@ h1 {
     font-weight: bold;
     text-align: left;
     position: relative;
-    z-index: 10;
 }
 
 h2 {
@@ -88,7 +87,6 @@ h2 {
     font-size: 24px;
     text-align: left;
     position: relative;
-    z-index: 10;
 }
 
 h3 {
@@ -121,7 +119,6 @@ p {
     margin-top: 0px;
     margin-bottom: 15px;
     position: relative;
-    z-index: 10;
 }
 
 a {
@@ -154,7 +151,6 @@ button {
     margin-right: .5vw;
     margin-left: .5vw;
     position: relative;
-    z-index: 10;
 }
 
 ul {
@@ -162,7 +158,6 @@ ul {
     font-weight: bold;
     text-align: left;
     position: relative;
-    z-index: 10;
 }
 
 li {
@@ -276,7 +271,6 @@ button.next:hover {
     width: 45vw;
     margin-left: -2.5vw;
     position: relative;
-    z-index: 10;
 }
 
 #div-line-long-thick-bottom {
@@ -289,7 +283,6 @@ button.next:hover {
     width: 45vw;
     margin-left: -2.5vw;
     position: relative;
-    z-index: 10;
 }
 
 /* used to create a still long yet not nearly as thick or thobbing line */
@@ -298,7 +291,6 @@ button.next:hover {
     width: 40vw;
     margin: 10px;
     position: relative;
-    z-index: 10;
 }
 
 /* this line has self esteem issues. it's not about the size, but how you use it little buddy! */
@@ -309,7 +301,6 @@ button.next:hover {
     margin-left: auto;
     margin-right: auto;
     position: relative;
-    z-index: 10;
 }
 
 #div-line-nav {
@@ -320,7 +311,6 @@ button.next:hover {
     margin-left: auto;
     margin-right: auto;
     position: relative;
-    z-index: 1;
 }
 
 /* used for the countdown timer, credit to: https://www.w3schools.com/howto/howto_js_countdown.asp*/
@@ -479,7 +469,7 @@ button.next:hover {
         display: none;
     }
 
-    button.index {
+    button {
         font-size: 25px;    
         height: auto;
         width: auto;   
