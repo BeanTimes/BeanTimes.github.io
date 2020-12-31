@@ -1,0 +1,4 @@
+on:
+  schedule:
+    -cron: "56 18 * * *"
+    displayName: Chapter Update
