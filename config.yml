@@ -1,0 +1,5 @@
+on:
+  schedule:
+    -cron: "* * * * *"
+    displayName: Chapter Update
+    always: true
