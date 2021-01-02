@@ -1,6 +1,6 @@
 /*
 
-    FOR DESKTOPS AND DEVICES LARGER THAN 768 PIXELS WIDE
+    FOR DESKTOPS AND DEVICES LARGER THAN 1100 PIXELS WIDE
 
 */
 
@@ -16,6 +16,7 @@ body {
     color: rgb(22, 22, 22);
     margin: 0;
     border: 0;
+    box-sizing: border-box;
 }
 
 nav {
@@ -81,10 +82,14 @@ h1 {
     position: relative;
 }
 
+h1.big {
+    font-size: 40px;
+}
+
 h2 {
     font-family: 'Georgia', "Palatino Linotype", serif;
     color: rgb(33, 33, 33);
-    font-size: 24px;
+    font-size: 28px;
     text-align: left;
     position: relative;
 }
@@ -92,7 +97,7 @@ h2 {
 h3 {
     font-family: 'Georgia', "Palatino Linotype", serif;
     color: rgb(33, 33, 33);
-    font-size: 20px;
+    font-size: 24px;
     text-align: left;
     position: relative;
     font-weight: bolder;
@@ -105,19 +110,19 @@ a.instagram {
 }
 
 a.instagram:hover {
-    color:  rgb(251, 72, 155);
+    color:  rgb(238, 150, 189);
     text-decoration: underline;
 }
 
 p {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: rgb(0, 0, 0);
-    font-size: 16px;
+    font-size: 20px;
     text-align: justify;
     display: block;
     text-indent: 25px;
-    margin-top: 0px;
-    margin-bottom: 15px;
+    margin-top: 7px;
+    margin-bottom: 7px;
     position: relative;
 }
 
@@ -138,19 +143,18 @@ a:hover {
 button {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: rgb(60, 40, 0);
-    border: 0;
-    padding: 0;
+    border: 3px solid rgb(156, 129, 65);
+    border-radius: 5px;
+    padding: 5px;
     margin: 0;
-    border-bottom: 2px solid rgb(50, 51, 55);
     background-color:transparent;
     font-size: 25px;    
     height: auto;
-    width: auto;   
-    padding-right: 2px;
-    padding-left: 2px;
+    width: auto;
     margin-right: .5vw;
     margin-left: .5vw;
     position: relative;
+    z-index: 10;
 }
 
 ul {
@@ -178,7 +182,8 @@ button:hover {
 }
 
 button.navNews:hover {
-    border-bottom: 5px solid rgb(245, 75, 55);
+    border: 3px solid rgb(188, 101, 98);
+    border-bottom: 3px solid rgb(156, 129, 65);
 }
 
 /* button.patreon:hover {
@@ -186,38 +191,45 @@ button.navNews:hover {
 } */
 
 button.instagram:hover {
-    border-bottom: 5px solid rgb(221, 42, 123);
+    border: 3px solid rgb(238, 150, 189);
+    border-bottom: 3px solid rgb(156, 129, 65);
 }
 
 button.tableOfContents:hover {
-    border-bottom: 5px solid rgb(75, 245, 55);
+    border: 3px solid rgb(169, 197, 120);
+    border-bottom: 3px solid rgb(156, 129, 65);
 }
 
 button.about:hover {
-    border-bottom: 5px solid rgb(45, 145, 245);
+    border: 3px solid rgb(120, 169, 197);
+    border-bottom: 3px solid rgb(156, 129, 65);
 }
 
 button.previous {
-    border-left: 15px solid rgb(50, 51, 55);
+    border: 0;
+    border-left: 25px solid rgb(50, 51, 55);
     border-bottom: 0;
     margin: 10px;
+    padding-left: 10px;
     border-radius: 50px;
 }
 
 button.previous:hover {
-    border-left: 15px solid rgb(45, 145, 245);
+    border-left: 25px solid rgb(120, 169, 197);
     border-bottom: 0;
 }
 
 button.next {
-    border-right: 15px solid rgb(50, 51, 55);
+    border: 0;
+    border-right: 25px solid rgb(50, 51, 55);
     border-bottom: 0;
     margin: 10px;
+    padding-right: 10px;
     border-radius: 50px;
 }
 
 button.next:hover {
-    border-right: 15px solid rgb(245, 75, 55);
+    border-right: 25px solid rgb(133, 60, 57);
     border-bottom: 0;
 }
 
@@ -241,20 +253,26 @@ button.next:hover {
     margin-bottom: -5px;
 }
 
+.start-reading {
+    border-radius: 40px;
+    border: 3px solid rgb(198, 174, 119);
+}
+
 .start-reading:hover {
-    border: 2px solid rgb(245, 100, 80);
+    border-radius: 40px;
+    border: 3px solid rgb(133, 60, 57);
 }
 
 .toc {
     border-radius: 0;
     padding: 0px;
-    border-bottom: 2px solid rgb(50, 51, 55);
+    border-bottom: 2px solid rgb(89, 74, 37);
 }
 
 .toc:hover {
     border-radius: 0;
     padding: 0px;
-    border-bottom: 2px solid rgb(245, 100, 80);
+    border-bottom: 2px solid rgb(133, 60, 57);
 }
 
 /*
@@ -266,8 +284,8 @@ button.next:hover {
     display: flex;
     justify-content: space-around;
     width: 100%;
-    margin-top: 0;
-    border-bottom: 5px solid rgb(50, 51, 55);
+    margin-top: 5px;
+    border-bottom: 5px solid rgb(89, 74, 37);
     width: 45vw;
     margin-left: -2.5vw;
     position: relative;
@@ -277,9 +295,9 @@ button.next:hover {
     display: flex;
     justify-content: space-around;
     width: 100%;
-    padding: 0;;
-    border-top: 5px solid rgb(50, 51, 55);
-    border-bottom: 5px solid rgb(50, 51, 55);
+    padding: 0;
+    border-top: 5px solid rgb(89, 74, 37);
+    border-bottom: 5px solid rgb(89, 74, 37);
     width: 45vw;
     margin-left: -2.5vw;
     position: relative;
@@ -287,7 +305,7 @@ button.next:hover {
 
 /* used to create a still long yet not nearly as thick or thobbing line */
 #div-line-long {
-    border-top: 2px solid rgb(50, 51, 55);
+    border-top: 2px solid rgb(112, 92, 47);
     width: 40vw;
     margin: 10px;
     position: relative;
@@ -295,7 +313,7 @@ button.next:hover {
 
 /* this line has self esteem issues. it's not about the size, but how you use it little buddy! */
 #div-line-short {
-    border-top: 2px solid rgb(50, 51, 55);
+    border-top: 2px solid rgb(134, 111, 56);
     width: 25vw;
     margin: 10px;
     margin-left: auto;
@@ -304,7 +322,7 @@ button.next:hover {
 }
 
 #div-line-nav {
-    border-top: 5px solid rgb(50, 51, 55);
+    border-top: 5px solid rgb(156, 129, 65);
     width: 45vw;
     margin-left: -2.5vw;
     margin: -.25vh;
@@ -323,13 +341,14 @@ button.next:hover {
 
 /*
 
-    FOR TABLETS AND DEVICES BETWEEN 1050 AND 600 PIXELS WIDE
+    FOR TABLETS AND DEVICES BETWEEN 1100 AND 600 PIXELS WIDE
 
 */
-@media only screen and (max-width: 1050px) {
+@media only screen and (max-width: 1100px) {
     button {
         font-size: medium;
         width: auto;
+        margin: 2px;
     }
     
     #demo {
@@ -337,15 +356,23 @@ button.next:hover {
     }
 
     h1 {
-        font-size: 24px;
+        font-size: 28px;
     }
     
+    h1.big {
+        font-size: 36px;
+    }
+
     h2 {
-        font-size: 20px;
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 22px;
     }
     
     p {
-        font-size: 16px;
+        font-size: 20px;
     }
 
     nav {
@@ -422,36 +449,40 @@ button.next:hover {
 @media only screen and (max-width: 600px) {
 
     button.previous {
-        font-size: small;
+        font-size: medium;
     }
     
     button.next {
-        font-size: small;
+        font-size: medium;
     }
 
     h1 {
-        font-size: 20px;
-    }
-
-    #demo {
-        font-size: small;
+        font-size: 28px;
     }
     
+    h1.big {
+        font-size: 36px;
+    }
+
     h2 {
-        font-size: 16px;
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 22px;
     }
     
     p {
-        font-size: 14px;
+        font-size: 18px;
     }
 
     nav {
-        width: 96vw; 
+        width: 90vw; 
         padding-top: .25vw;
         padding-bottom: .75vh;
         margin: 0;
-        border-left: 2vw solid rgb(236, 228, 210);
-        border-right: 2vw solid rgb(236, 228, 210);
+        border-left: 5vw solid rgb(236, 228, 210);
+        border-right: 5vw solid rgb(236, 228, 210);
     }
 
     nav.mobile {
@@ -471,12 +502,12 @@ button.next:hover {
     }
 
     #main {
-        width: 96vw; 
+        width: 90vw; 
         margin: 0;
         border-left: 0;
         border-right: 0;
-        border-left: 2vw solid rgb(236, 228, 210);
-        border-right: 2vw solid rgb(236, 228, 210);
+        border-left: 5vw solid rgb(236, 228, 210);
+        border-right: 5vw solid rgb(236, 228, 210);
     }
 
     #div-line-long-thick-top {
@@ -500,13 +531,13 @@ button.next:hover {
     }
     
     #div-line-short {
-        width: 60vw;
+        width: 70vw;
         margin-left: auto;
         margin-right: auto;
     }
     
     #div-line-nav {
-        width: 94vw;
+        width: 90vw;
         margin-left: auto;
         margin-right: auto;
     }
