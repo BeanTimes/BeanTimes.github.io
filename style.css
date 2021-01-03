@@ -329,6 +329,7 @@ button.next:hover {
     margin-left: auto;
     margin-right: auto;
     position: relative;
+    z-index: 100;
 }
 
 /* used for the countdown timer, credit to: https://www.w3schools.com/howto/howto_js_countdown.asp*/
