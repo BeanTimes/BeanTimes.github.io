@@ -104,6 +104,14 @@ h3 {
     font-style: italic;
 }
 
+a.underline {
+    text-decoration: underline;
+}
+
+a.underline:hover {
+    text-decoration: underline;
+}
+
 a.instagram {
     color:  rgb(221, 42, 123);
     text-decoration: underline;
