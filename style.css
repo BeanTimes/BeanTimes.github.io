@@ -1,16 +1,3 @@
-/*
-
-    FOR DESKTOPS AND DEVICES LARGER THAN 1100 PIXELS WIDE
-
-*/
-
-
-
-/*
-    body, nav, and id main elements bunched together for convenience
-    for some background, i use ids for divs and classes for text and images
-*/
-
 body {
     background-color: rgb(50, 51, 55);
     color: rgb(22, 22, 22);
@@ -26,8 +13,8 @@ nav {
     color:  rgb(22, 22, 22);
     height: auto;
     text-align: center;
-    padding-top: .25vw;
-    padding-bottom: .75vh;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
     margin-left: 25vw; 
     margin-right: 25vw;
     border: 0;
@@ -51,31 +38,20 @@ nav {
     height: auto;
 }
 
-#main-about {
-    display: block;
-    width: 40vw; 
-    background-color: rgb(236, 228, 210);
-    border-left: 5vw solid rgb(236, 228, 210);
-    border-right: 5vw solid rgb(236, 228, 210);
-    border-top: 1px solid rgb(236, 228, 210);
-    border-bottom: 1px solid rgb(236, 228, 210);
-    margin-left: 25vw; 
-    margin-right: 25vw;
-    text-align: center;
-    height: 95.5vh;
-}
-
-/*
-    text-based tags, stuff like headers, paragraphs, and hyperlinks. button is also here (say hi to button) but other more specifc button classes are grouped together for convenience
-*/
-
-h1 {
+*
+{
     font-family: 'Georgia', "Palatino Linotype", serif;
+    src: font-url('Georgia.tff');
+    font-display: swap;
     color: rgb(33, 33, 33);
-    font-size: 32px;
-    font-weight: bold;
     text-align: left;
     position: relative;
+    font-display: swap;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: bold;
 }
 
 h1.big {
@@ -83,21 +59,27 @@ h1.big {
 }
 
 h2 {
-    font-family: 'Georgia', "Palatino Linotype", serif;
-    color: rgb(33, 33, 33);
     font-size: 28px;
-    text-align: left;
-    position: relative;
 }
 
 h3 {
-    font-family: 'Georgia', "Palatino Linotype", serif;
-    color: rgb(33, 33, 33);
     font-size: 24px;
-    text-align: left;
-    position: relative;
     font-weight: bolder;
     font-style: italic;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(60, 40, 0);
+    padding: 10px;
+    border-radius: 25px;
+}
+
+a:hover {
+    text-decoration: none;
+    color: rgb(160, 140, 100);
+    transition-timing-function: ease;
+    transition-duration: 0.25s;
 }
 
 a.underline {
@@ -130,27 +112,13 @@ p {
     position: relative;
 }
 
-a {
-    text-decoration: none;
-    color: rgb(60, 40, 0);
-    padding: 10px;
-    border-radius: 25px;
-}
-
-a:hover {
-    text-decoration: none;
-    color: rgb(160, 140, 100);
-    transition-timing-function: ease;
-    transition-duration: 0.25s;
-}
-
 button {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: rgb(60, 40, 0);
     border: 3px solid rgb(156, 129, 65);
     border-radius: 5px;
     padding: 5px;
-    margin: 0;
+    margin: 2.5px;
     background-color:transparent;
     font-size: 25px;    
     height: auto;
@@ -158,24 +126,7 @@ button {
     margin-right: .5vw;
     margin-left: .5vw;
     position: relative;
-    z-index: 10;
 }
-
-ul {
-    font-size: 32px;
-    font-weight: bold;
-    text-align: left;
-    position: relative;
-}
-
-li {
-    margin-bottom: 15px;
-}
-
-
-/*
-    previously mentioned button classes
-*/
 
 button:hover {
     cursor: pointer;
@@ -187,26 +138,22 @@ button:hover {
 
 button.navNews:hover {
     border: 3px solid rgb(188, 101, 98);
-    border-bottom: 3px solid rgb(156, 129, 65);
 }
-
-/* button.patreon:hover {
-    border-bottom: 5px solid rgb(250, 105, 85);
-} */
 
 button.instagram:hover {
     border: 3px solid rgb(238, 150, 189);
-    border-bottom: 3px solid rgb(156, 129, 65);
 }
 
 button.tableOfContents:hover {
     border: 3px solid rgb(169, 197, 120);
-    border-bottom: 3px solid rgb(156, 129, 65);
 }
 
 button.about:hover {
     border: 3px solid rgb(120, 169, 197);
-    border-bottom: 3px solid rgb(156, 129, 65);
+}
+
+button.download:hover {
+    border: 3px solid rgb(233, 193, 108);
 }
 
 button.previous {
@@ -237,21 +184,21 @@ button.next:hover {
     border-bottom: 0;
 }
 
+ul {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: left;
+    position: relative;
+}
 
+li {
+    margin-bottom: 15px;
+}
 
-/*
-    general classes
-*/
-
-/* used to center text. obviously. */
 .center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
     text-align: center;
 }
 
-/* used to center things vertically. again, this should be obvious, it's called center-vert */
 .center-vert {
     margin-top: auto;
     margin-bottom: -5px;
@@ -259,6 +206,7 @@ button.next:hover {
 
 .start-reading {
     border-radius: 40px;
+    padding: 5px 10px;
     border: 3px solid rgb(198, 174, 119);
 }
 
@@ -279,11 +227,6 @@ button.next:hover {
     border-bottom: 2px solid rgb(133, 60, 57);
 }
 
-/*
-    general ids
-*/
-
-/* used to create a thick, throbbing, juicy line that spans half the viewport */
 #div-line-long-thick-top {
     display: flex;
     justify-content: space-around;
@@ -292,6 +235,7 @@ button.next:hover {
     border-bottom: 5px solid rgb(89, 74, 37);
     width: 45vw;
     margin-left: -2.5vw;
+    margin-right: auto;
     position: relative;
 }
 
@@ -307,7 +251,6 @@ button.next:hover {
     position: relative;
 }
 
-/* used to create a still long yet not nearly as thick or thobbing line */
 #div-line-long {
     border-top: 2px solid rgb(112, 92, 47);
     width: 40vw;
@@ -315,7 +258,6 @@ button.next:hover {
     position: relative;
 }
 
-/* this line has self esteem issues. it's not about the size, but how you use it little buddy! */
 #div-line-short {
     border-top: 2px solid rgb(134, 111, 56);
     width: 25vw;
@@ -329,26 +271,12 @@ button.next:hover {
     border-top: 5px solid rgb(156, 129, 65);
     width: 45vw;
     margin-left: -2.5vw;
-    margin: -.25vh;
+    margin-top: .5vh;
     margin-left: auto;
     margin-right: auto;
     position: relative;
-    z-index: 100;
 }
 
-/* used for the countdown timer, credit to: https://www.w3schools.com/howto/howto_js_countdown.asp*/
-#demo {
-    text-align: center;
-    font-size: x-large;
-}
-
-
-
-/*
-
-    FOR TABLETS AND DEVICES BETWEEN 1100 AND 600 PIXELS WIDE
-
-*/
 @media only screen and (max-width: 1100px) {
     button {
         font-size: medium;
@@ -383,8 +311,6 @@ button.next:hover {
     nav {
         width: 80vw;
         margin-left: -2.5vw;
-        padding-top: .25vw;
-        padding-bottom: .75vh;
         margin-left: 10vw; 
         margin-right: 10vw;
     }
@@ -395,24 +321,12 @@ button.next:hover {
 
     #main {
         width: 70vw; 
-        border-left: 5vw solid rgb(236, 228, 210);
-        border-right: 5vw solid rgb(236, 228, 210);
-        margin-left: 10vw; 
-        margin-right: 10vw;
-    }
-    
-    #main-about {
-        width: 70vw; 
-        border-left: 5vw solid rgb(236, 228, 210);
-        border-right: 5vw solid rgb(236, 228, 210);
         margin-left: 10vw; 
         margin-right: 10vw;
     }
 
     #div-line-long-thick-top {
         width: 75vw;
-        margin-left: -2.5vw;
-        margin-right: auto;
     }
     
     #div-line-long-thick-bottom {
@@ -429,24 +343,13 @@ button.next:hover {
     
     #div-line-short {
         width: 40vw;
-        margin-left: auto;
-        margin-right: auto;
     }
     
     #div-line-nav {
         width: 75vw;
-        margin-left: auto;
-        margin-right: auto;
     }
 }
 
-
-
-/*
-
-    FOR PHONES AND STUPID LITTLE DEVICES LESS THAN 600 PIXELS WIDE
-
-*/
 @media only screen and (max-width: 600px) {
 
     button.previous {
@@ -478,9 +381,7 @@ button.next:hover {
     }
 
     nav {
-        width: 90vw; 
-        padding-top: .25vw;
-        padding-bottom: .75vh;
+        width: 90vw;
         margin: 0;
         border-left: 5vw solid rgb(236, 228, 210);
         border-right: 5vw solid rgb(236, 228, 210);
@@ -501,8 +402,6 @@ button.next:hover {
     #main {
         width: 90vw; 
         margin: 0;
-        border-left: 0;
-        border-right: 0;
         border-left: 5vw solid rgb(236, 228, 210);
         border-right: 5vw solid rgb(236, 228, 210);
     }
@@ -517,8 +416,6 @@ button.next:hover {
     #div-line-long-thick-bottom {
         width: 90vw;
         height: auto;
-        margin-left: auto;
-        margin-right: auto;
     }
     
     #div-line-long {
@@ -529,13 +426,9 @@ button.next:hover {
     
     #div-line-short {
         width: 70vw;
-        margin-left: auto;
-        margin-right: auto;
     }
     
     #div-line-nav {
         width: 90vw;
-        margin-left: auto;
-        margin-right: auto;
     }
 }
