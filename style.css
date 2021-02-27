@@ -33,11 +33,7 @@ nav {
     border: 0;
 }
 
-nav.desktop {
-    display: block;
-}
-
-nav.mobile {
+.mobile {
     display: none;
 }
 
@@ -393,12 +389,8 @@ button.next:hover {
         margin-right: 10vw;
     }
 
-    nav.mobile {
+    .mobile {
         display: block;
-    }
-
-    nav.desktop {
-        display: none;
     }
 
     #main {
@@ -494,12 +486,8 @@ button.next:hover {
         border-right: 5vw solid rgb(236, 228, 210);
     }
 
-    nav.mobile {
+    .mobile {
         display: block;
-    }
-
-    nav.desktop {
-        display: none;
     }
 
     button {
