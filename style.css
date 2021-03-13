@@ -130,30 +130,45 @@ button {
 
 button:hover {
     cursor: pointer;
-    color: rgb(160, 140, 100);
+    color: rgb(250, 230, 180);
     transition-timing-function: ease;
     transition-duration: 0.25s;
     border-radius: 5px;
 }
 
 button.navNews:hover {
-    border: 3px solid rgb(188, 101, 98);
-}
-
-button.instagram:hover {
-    border: 3px solid rgb(238, 150, 189);
+    border: 3px solid rgb(147, 67, 4);
+    background-color: rgb(147, 67, 4);
 }
 
 button.tableOfContents:hover {
-    border: 3px solid rgb(169, 197, 120);
+    border: 3px solid rgb(67, 40, 28);
+    background-color: rgb(67, 40, 28);
 }
 
 button.about:hover {
-    border: 3px solid rgb(120, 169, 197);
+    border: 3px solid rgb(111, 37, 85);
+    background-color: rgb(111, 37, 85);
 }
 
 button.download:hover {
-    border: 3px solid rgb(233, 193, 108);
+    border: 3px solid rgb(124, 123, 85);
+    background-color: rgb(124, 123, 85);
+}
+
+button.instagram:hover {
+    border: 3px solid rgb(193, 53, 132);
+    background-color: rgb(193, 53, 132);
+}
+
+button.twitter:hover {
+    border: 3px solid rgb(29, 161, 242);
+    background-color: rgb(29, 161, 242);
+}
+
+button.tumblr:hover {
+    border: 3px solid rgb(73, 90, 110);
+    background-color: rgb(73, 90, 110);
 }
 
 button.previous {
@@ -213,6 +228,7 @@ li {
 .start-reading:hover {
     border-radius: 40px;
     border: 3px solid rgb(133, 60, 57);
+    background-color: rgb(133, 60, 57);
 }
 
 .toc {
