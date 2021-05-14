@@ -22,17 +22,76 @@
         <title>The Bean Times</title>
         <link rel="icon" type="image/png" href="favicon.png"/>
         <link rel="stylesheet" type="text/css" href="style.css">
+
+        <script>
+            function quote()
+            {
+                let quotes = [
+                    //funny original words
+                    'A good source of fiber!',
+                    'One of, if not the best biweekly / weekly web serial centering around a war between humans and baked beans that follows the point of views of three seperate characters named Thomas, Barnabas, and Julia, while using GitHub Pages to publish the content (on a biweekly or weekly basis, as mentioned previously).',
+                    '7.8 out of 10, too many Beans.',
+                    '<a href="https://i.kym-cdn.com/entries/icons/original/000/026/008/Screen_Shot_2018-04-25_at_12.24.22_PM.png" target="_blank">bEans</a>',
+                    'You are a "Bean!" (derogatory).',
+                    //epigraphs
+                    'To those who have survived: I write this now, for I fear my death is imminent. I originally wrote this journal to catalog information about the Beans in hopes of finding a way to defeat them, or at the very least, put up the slightest semblance of a fight as we were mercilessly slaughtered. All of my collected information about the different types of Beans and their abilities are detailed later within this journal. Do not let us die. Not like this.',
+                    //chapter 1
+                    '“From what I understand, it is simply a resurgence of the plague, not some monster attack. As long as traders continue to avoid Paris, the Empire will be fine. Surely Nuremberg will have nothing to worry about.”',
+                    //chapter 2
+                    'Captain Bösch\'s silver mustache was waving in the slight breeze atop his steed. He made eye contact with Schmidt, smiled, then winked.<br><br>“God, I hate that guy,” Rob said.',
+                    //chapter 3
+                    '“Well, ya see, we’n think that that there ruckus is the work of God... Um... and, we’n are lookin’ for people that would be intr’sted in joinin’ us worshipin’ the angel sent from on high, the Beanmeister, so that we’n may be spared, from His holy wrath!”',
+                    //chapter 4
+                    'He even went as far as asking Captain Bösch himself, the man responsible for the Empire’s efforts in Dijon, if he could return to Nuremberg. In not so many words, Bösch refused.',
+                    //chapter 5
+                    '“It’s amazing how we’re in the same company but never see each other, isn’t it Barry?” Bösch exclaimed. “It’s almost like you’re avoiding me!”<br><br>“I am avoiding you.”',
+                    //chapter 6
+                    '“The Beanmeister has been sent by the Lord to deliver us, the believers, from our mortal flesh and blood. Just as Christ delivered himself unto us, allowing himself to be placed upon the cross as penance for our sins, so too shall we allow ourselves to repent, here, today, so that we may find peace, and be accepted into Heaven.”',
+                    //chapter 7
+                    'The dull ringing of the bell remained. There is only one bell that Sauer knew of, and that was the bell directly above him in the bell tower of St. Gotthard’s Chapel.<br><br>That bell was only supposed to be rung in the event of a dire emergency.',
+                    //chapter 8
+                    '“Don’t call me Barry.”<br><br>“Alright Barnabas.”',
+                    //chapter 9
+                    'Before he saw the creature, he could smell it. It produced a sickly, sour stench, like rotting fruit. As he turned toward the threat, Sauer noticed that the clumps of the creature’s shell were small, thumb sized orbs, with each orb surrounded by a small amount of sickly white liquid.',
+                    //chapter 10
+                    '“You’re a fool, Julia Krause! You’re not the Julia I used to know! The Jules I knew wouldn’t be acting like this! The Jules I knew would be thinking about Henry, about Annemarie! If you keep doing this, you’re going to get them killed! Your daughter, your husband, they’ll die! And you’re going to be the one that killed them!”',
+                    //chapter 11
+                    //'',
+                    //chapter 12
+                    //'',
+                    //chapter 13
+                    //'',
+                    //chapter 14
+                    //'',
+                    //chapter 15
+                    //'',
+                    //chapter 16
+                    //'',
+                    //chapter 17
+                    //'',
+                    //chapter 18
+                    //'',
+                    //chapter 19
+                    //'',
+                    //chapter 20
+                    //'',
+                ];
+                let quote = quotes[Math.floor(Math.random() * quotes.length)];
+
+                document.getElementById("quote").innerHTML = quote;
+            }
+        </script>
+
     </head>
 
-    <body>
+    <body onload="quote()">
 
         <div id="main">
             <div id="div-line-short"></div>
             <div id="div-line-long"></div>
             <div id="div-line-long-thick-top"></div>
             
-            <h3 class="center">April 10th, 1588.</h3>
-            <h3 class="center indexspacing">To those who have survived: I write this now, for I fear my death is imminent. I originally wrote this journal to catalog information about the Beans in hopes of finding a way to defeat them, or at the very least, put up the slightest semblance of a fight as we were mercilessly slaughtered. All of my collected information about the different types of Beans and their abilities are detailed later within this journal. Do not let us die. Not like this.</h3>
+            <h4><span id="quote"></span></h4>
 
             <button class="start-reading center" onclick="window.location.href='./news.html';">Latest News</button>
             <br>

@@ -1,455 +1,441 @@
 body {
-    background-color: rgb(50, 51, 55);
-    color: rgb(22, 22, 22);
-    margin: 0;
-    border: 0;
-    box-sizing: border-box;
+  background: linear-gradient(
+    90deg,
+    rgba(10, 10, 10, 1) 0%,
+    rgba(100, 100, 100, 1) 50%,
+    rgba(10, 10, 10, 1) 100%
+  );
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  text-align: center;
+  height: auto;
 }
 
 nav {
-    display: block;
-    width: 50vw; 
-    background-color: rgb(236, 228, 210);
-    color:  rgb(22, 22, 22);
-    height: auto;
-    text-align: center;
-    padding-top: 1vh;
-    padding-bottom: 1vh;
-    margin-left: 25vw; 
-    margin-right: 25vw;
-    border: 0;
+  display: block;
+  width: 50vw;
+  background: linear-gradient(
+    90deg,
+    rgba(75, 75, 75, 1) 0%,
+    rgba(236, 228, 210, 1) 1.5%,
+    rgba(236, 228, 210, 1) 98.5%,
+    rgba(75, 75, 75, 1) 100%
+  );
+  height: auto;
+  text-align: center;
+  padding: 1vh 0;
+  margin: 0 25vw;
+  border: 0;
 }
 
 .mobile {
-    display: none;
+  display: none;
 }
 
 #main {
-    display: block;
-    width: 40vw; 
-    background-color: rgb(236, 228, 210);
-    border-left: 5vw solid rgb(236, 228, 210);
-    border-right: 5vw solid rgb(236, 228, 210);
-    border-top: 1px solid rgb(236, 228, 210);
-    border-bottom: 1px solid rgb(236, 228, 210);
-    margin-left: 25vw; 
-    margin-right: 25vw;
-    text-align: center;
-    height: auto;
+  display: block;
+  width: 40vw;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(75, 75, 75, 1) 0%,
+    rgba(236, 228, 210, 1) 1.5%,
+    rgba(236, 228, 210, 1) 98.5%,
+    rgba(75, 75, 75, 1) 100%
+  );
+  padding: 1px 5vw;
+  margin: 0 25vw;
+  text-align: center;
+  height: auto;
 }
 
-*
-{
-    font-family: 'Georgia', "Palatino Linotype", serif;
-    src: font-url('Georgia.tff');
-    font-display: swap;
-    color: rgb(33, 33, 33);
-    text-align: left;
-    position: relative;
-    font-display: swap;
-}
-
-h1 {
-    font-size: 32px;
-    font-weight: bold;
+* {
+  font-family: "Georgia", "Palatino Linotype", serif;
+  src: font-url("Georgia.tff");
+  font-display: swap;
+  color: rgb(33, 33, 33);
+  text-align: left;
+  position: relative;
+  font-display: swap;
 }
 
 h1.big {
-    font-size: 40px;
+  font-size: 40px;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: bold;
 }
 
 h2 {
-    font-size: 28px;
+  font-size: 28px;
 }
 
 h3 {
-    font-size: 24px;
-    font-weight: bolder;
-    font-style: italic;
-    
+  font-size: 24px;
+  font-weight: bolder;
+  font-style: italic;
 }
 
-h3.indexspacing {
-    line-height: 150%;
+h4 {
+  text-align: center;
+  font-size: 24px;
+  line-height: 30px;
 }
 
 a {
-    text-decoration: none;
-    color: rgb(60, 40, 0);
-    padding: 10px;
-    border-radius: 25px;
+  text-decoration: none;
+  color: rgb(60, 40, 0);
+  padding: 10px;
+  border-radius: 25px;
 }
 
 a:hover {
-    text-decoration: none;
-    color: rgb(160, 140, 100);
-    transition-timing-function: ease;
-    transition-duration: 0.25s;
+  text-decoration: none;
+  color: rgb(160, 140, 100);
+  transition-timing-function: ease;
+  transition-duration: 0.25s;
+}
+
+a:visited {
+  color: rgb(110, 90, 50);
+}
+
+a:visited:hover {
+  color: rgb(160, 140, 100);
 }
 
 a.underline {
-    text-decoration: underline;
-}
-
-a.underline:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 a.instagram {
-    color:  rgb(221, 42, 123);
-    text-decoration: underline;
+  color: rgb(221, 42, 123);
+  text-decoration: underline;
 }
 
 a.instagram:hover {
-    color:  rgb(238, 150, 189);
-    text-decoration: underline;
+  color: rgb(238, 150, 189);
 }
 
 p {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: rgb(0, 0, 0);
-    font-size: 20px;
-    text-align: justify;
-    display: block;
-    text-indent: 25px;
-    margin-top: 7px;
-    margin-bottom: 7px;
-    position: relative;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  text-align: justify;
+  text-indent: 50px;
 }
 
 button {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: rgb(60, 40, 0);
-    border: 3px solid rgb(156, 129, 65);
-    border-radius: 5px;
-    padding: 5px;
-    margin: 2.5px;
-    background-color:transparent;
-    font-size: 25px;    
-    height: auto;
-    width: auto;
-    margin-right: .5vw;
-    margin-left: .5vw;
-    position: relative;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-align: center;
+  color: rgb(60, 40, 0);
+  border: 3px solid rgb(156, 129, 65);
+  border-radius: 5px;
+  padding: 5px;
+  margin: 2.5px;
+  background-color: transparent;
+  font-size: 25px;
+  height: auto;
+  width: auto;
+  margin-right: 0.5vw;
+  margin-left: 0.5vw;
 }
 
 button:hover {
-    cursor: pointer;
-    color: rgb(250, 230, 180);
-    transition-timing-function: ease;
-    transition-duration: 0.25s;
-    border-radius: 5px;
-}
-
-button.navNews:hover {
-    border: 3px solid rgb(147, 67, 4);
-    background-color: rgb(147, 67, 4);
-}
-
-button.tableOfContents:hover {
-    border: 3px solid rgb(67, 40, 28);
-    background-color: rgb(67, 40, 28);
-}
-
-button.about:hover {
-    border: 3px solid rgb(111, 37, 85);
-    background-color: rgb(111, 37, 85);
-}
-
-button.download:hover {
-    border: 3px solid rgb(124, 123, 85);
-    background-color: rgb(124, 123, 85);
+  cursor: pointer;
+  border: 3px solid rgb(206, 179, 115);
+  background-color: rgb(206, 179, 115);
+  transition-timing-function: ease;
+  transition-duration: 0.25s;
+  border-radius: 5px;
 }
 
 button.instagram:hover {
-    border: 3px solid rgb(193, 53, 132);
-    background-color: rgb(193, 53, 132);
+  color: rgb(250, 250, 200);
+  border: 3px solid rgb(193, 53, 132);
+  background-color: rgb(193, 53, 132);
 }
 
 button.twitter:hover {
-    border: 3px solid rgb(29, 161, 242);
-    background-color: rgb(29, 161, 242);
+  color: rgb(250, 250, 200);
+  border: 3px solid rgb(2, 134, 215);
+  background-color: rgb(2, 134, 215);
 }
 
 button.tumblr:hover {
-    border: 3px solid rgb(73, 90, 110);
-    background-color: rgb(73, 90, 110);
+  color: rgb(250, 250, 200);
+  border: 3px solid rgb(73, 90, 110);
+  background-color: rgb(73, 90, 110);
 }
 
 button.previous {
-    border: 0;
-    border-left: 25px solid rgb(50, 51, 55);
-    border-bottom: 0;
-    margin: 10px;
-    padding-left: 10px;
-    border-radius: 50px;
+  border: 0;
+  border-bottom: 0;
+  margin: 10px;
+  padding-left: 10px;
+  border-radius: 50px;
 }
 
 button.previous:hover {
-    border-left: 25px solid rgb(120, 169, 197);
-    border-bottom: 0;
+  background-color: rgb(255, 247, 229);
+  border-bottom: 0;
+  color: rgb(60, 40, 0);
 }
 
 button.next {
-    border: 0;
-    border-right: 25px solid rgb(50, 51, 55);
-    border-bottom: 0;
-    margin: 10px;
-    padding-right: 10px;
-    border-radius: 50px;
+  border: 0;
+  border-bottom: 0;
+  background-color: none;
+  margin: 10px;
+  padding-right: 10px;
+  border-radius: 50px;
 }
 
 button.next:hover {
-    border-right: 25px solid rgb(133, 60, 57);
-    border-bottom: 0;
+  background-color: rgb(255, 247, 229);
+  border-bottom: 0;
+  color: rgb(60, 40, 0);
 }
 
 ul {
-    font-size: 32px;
-    font-weight: bold;
-    text-align: left;
-    position: relative;
+  font-size: 32px;
+  font-weight: bold;
+  text-align: left;
+  position: relative;
 }
 
 li {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 .center {
-    text-align: center;
-}
-
-.center-vert {
-    margin-top: auto;
-    margin-bottom: -5px;
+  text-align: center;
 }
 
 .start-reading {
-    border-radius: 40px;
-    padding: 5px 10px;
-    border: 3px solid rgb(198, 174, 119);
+  border-radius: 40px;
+  margin: 7px 0px;
+  padding: 5px 10px;
+  border: 3px solid rgb(198, 174, 119);
 }
 
 .start-reading:hover {
-    border-radius: 40px;
-    border: 3px solid rgb(133, 60, 57);
-    background-color: rgb(133, 60, 57);
+  border-radius: 40px;
+  color: rgb(60, 40, 0);
 }
 
 .toc {
-    border-radius: 0;
-    padding: 0px;
-    border-bottom: 2px solid rgb(89, 74, 37);
+  border-radius: 0;
+  padding: 0px;
+  border-bottom: 2px solid rgb(89, 74, 37);
 }
 
 .toc:hover {
-    border-radius: 0;
-    padding: 0px;
-    border-bottom: 2px solid rgb(133, 60, 57);
+  border-radius: 0;
+  padding: 0px;
+  border-bottom: 2px solid rgb(180, 60, 50);
 }
 
 #div-line-long-thick-top {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    margin-top: 5px;
-    border-bottom: 5px solid rgb(89, 74, 37);
-    width: 45vw;
-    margin-left: -2.5vw;
-    margin-right: auto;
-    position: relative;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 5px;
+  border-bottom: 5px solid rgb(89, 74, 37);
+  width: 45vw;
+  margin-left: -2.5vw;
+  margin-right: auto;
+  position: relative;
 }
 
 #div-line-long-thick-bottom {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    padding: 0;
-    border-top: 5px solid rgb(89, 74, 37);
-    border-bottom: 5px solid rgb(89, 74, 37);
-    width: 45vw;
-    margin-left: -2.5vw;
-    position: relative;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding: 0;
+  border: solid rgb(89, 74, 37);
+  border-width: 5px 0px 5px 0px;
+  width: 45vw;
+  margin-left: -2.5vw;
+  position: relative;
 }
 
 #div-line-long {
-    border-top: 2px solid rgb(112, 92, 47);
-    width: 40vw;
-    margin: 10px;
-    position: relative;
+  border-top: 2px solid rgb(112, 92, 47);
+  width: 40vw;
+  margin: 10px;
+  position: relative;
 }
 
 #div-line-short {
-    border-top: 2px solid rgb(134, 111, 56);
-    width: 25vw;
-    margin: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
+  border-top: 2px solid rgb(134, 111, 56);
+  width: 25vw;
+  margin: 10px auto 10px auto;
+  position: relative;
 }
 
 #div-line-nav {
-    border-top: 5px solid rgb(156, 129, 65);
-    width: 45vw;
-    margin-left: -2.5vw;
-    margin-top: .5vh;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
+  border-top: 5px solid rgb(156, 129, 65);
+  width: 45vw;
+  margin: 0.5vh auto 0 auto;
+  position: relative;
 }
 
 @media only screen and (max-width: 1100px) {
-    button {
-        font-size: medium;
-        width: auto;
-        margin: 2px;
-    }
-    
-    #demo {
-        font-size: large;
-    }
+  body {
+    background: linear-gradient(
+      90deg,
+      rgba(25, 25, 25, 1) 0%,
+      rgba(255, 255, 255, 1) 50%,
+      rgba(25, 25, 25, 1) 100%
+    );
+  }
 
-    h1 {
-        font-size: 28px;
-    }
-    
-    h1.big {
-        font-size: 36px;
-    }
+  button {
+    font-size: medium;
+    width: auto;
+    margin: 2px;
+  }
 
-    h2 {
-        font-size: 24px;
-    }
+  h1 {
+    font-size: 28px;
+  }
 
-    h3 {
-        font-size: 22px;
-    }
-    
-    p {
-        font-size: 20px;
-    }
+  h1.big {
+    font-size: 36px;
+  }
 
-    nav {
-        width: 80vw;
-        margin-left: -2.5vw;
-        margin-left: 10vw; 
-        margin-right: 10vw;
-    }
+  h2 {
+    font-size: 24px;
+  }
 
-    .mobile {
-        display: block;
-    }
+  h3 {
+    font-size: 22px;
+  }
 
-    #main {
-        width: 70vw; 
-        margin-left: 10vw; 
-        margin-right: 10vw;
-    }
+  p {
+    font-size: 20px;
+  }
 
-    #div-line-long-thick-top {
-        width: 75vw;
-    }
-    
-    #div-line-long-thick-bottom {
-        width: 75vw;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    
-    #div-line-long {
-        width: 60vw;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    
-    #div-line-short {
-        width: 40vw;
-    }
-    
-    #div-line-nav {
-        width: 75vw;
-    }
+  nav {
+    width: 80vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    padding: 0;
+  }
+
+  #main {
+    width: 70vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+  }
+
+  #div-line-long-thick-top {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #div-line-long-thick-bottom {
+    width: 70vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #div-line-long {
+    width: 55vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #div-line-short {
+    width: 35vw;
+  }
+
+  #div-line-nav {
+    width: 70vw;
+  }
 }
 
 @media only screen and (max-width: 600px) {
+  body {
+    background-color: rgb(50, 50, 50);
+  }
 
-    button.previous {
-        font-size: medium;
-    }
-    
-    button.next {
-        font-size: medium;
-    }
+  h1 {
+    font-size: 28px;
+  }
 
-    h1 {
-        font-size: 28px;
-    }
-    
-    h1.big {
-        font-size: 36px;
-    }
+  h1.big {
+    font-size: 36px;
+  }
 
-    h2 {
-        font-size: 24px;
-    }
+  h2 {
+    font-size: 24px;
+  }
 
-    h3 {
-        font-size: 22px;
-    }
-    
-    p {
-        font-size: 18px;
-    }
+  h3 {
+    font-size: 22px;
+  }
 
-    nav {
-        width: 90vw;
-        margin: 0;
-        border-left: 5vw solid rgb(236, 228, 210);
-        border-right: 5vw solid rgb(236, 228, 210);
-    }
+  p {
+    font-size: 18px;
+  }
 
-    .mobile {
-        display: block;
-    }
+  nav {
+    width: 85vw;
+    margin: 0;
+    padding: 1px 7.5vw;
+  }
 
-    button {
-        font-size: 25px;    
-        height: auto;
-        width: auto;   
-        padding-right: 2px;
-        padding-left: 2px;
-    }
+  .mobile {
+    display: block;
+  }
 
-    #main {
-        width: 90vw; 
-        margin: 0;
-        border-left: 5vw solid rgb(236, 228, 210);
-        border-right: 5vw solid rgb(236, 228, 210);
-    }
+  button {
+    font-size: 25px;
+    height: auto;
+    width: auto;
+    padding-right: 2px;
+    padding-left: 2px;
+  }
 
-    #div-line-long-thick-top {
-        width: 90vw;
-        height: auto;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    
-    #div-line-long-thick-bottom {
-        width: 90vw;
-        height: auto;
-    }
-    
-    #div-line-long {
-        width: 80vw;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    
-    #div-line-short {
-        width: 70vw;
-    }
-    
-    #div-line-nav {
-        width: 90vw;
-    }
+  #main {
+    width: 85vw;
+    margin: 0;
+    padding: 1px 7.5vw;
+  }
+
+  #div-line-long-thick-top {
+    display: block;
+    text-align: center;
+    width: 85vw;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #div-line-long-thick-bottom {
+    width: 85vw;
+    height: auto;
+  }
+
+  #div-line-long {
+    width: 75vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #div-line-short {
+    width: 65vw;
+  }
+
+  #div-line-nav {
+    width: 85vw;
+  }
 }
