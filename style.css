@@ -120,6 +120,24 @@ a.instagram:hover {
   color: rgb(238, 150, 189);
 }
 
+a.twitter {
+  color: rgb(2, 134, 215);
+  text-decoration: underline;
+}
+
+a.twitter:hover {
+  color: rgb(106, 198, 255);
+}
+
+a.tumblr {
+  color: rgb(73, 90, 110);
+  text-decoration: underline;
+}
+
+a.tumblr:hover {
+  color: rgb(146, 163, 182);
+}
+
 p {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
